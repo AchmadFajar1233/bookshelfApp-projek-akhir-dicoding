@@ -1,0 +1,32 @@
+footer {
+  margin-top: 5rem;
+  height: 5rem;
+}
+
+.bookCard{
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+}
+.bookCard::-webkit-scrollbar{
+    display: none;
+}
+.bookCard div{
+    width: 10rem;
+    height: 15rem;
+}
+
+@media screen and (max-width: 750px) {
+  .card__book{
+    width: 100%;
+  }
+  .bookCard{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .bookCard div{
+    width: 100%;
+  }
+}
