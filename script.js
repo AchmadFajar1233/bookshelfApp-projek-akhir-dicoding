@@ -62,8 +62,8 @@ function makeCardBook(book) {
                                 <h5 class="text-light">${item.title}</h5>
                             </div>
                             <div class="w-100 h-50 px-2 py-2 d-flex justify-content-center align-items-center gap-4 border-top">
-                                <button class="btn btn-outline-primary"><i class="${
-                                  item.isRead
+                                <button onClick="isReadBook(${index})" class="btn btn-outline-primary"><i class="${
+                                  !item.isRead
                                     ? "fa-solid fa-bookmark"
                                     : "fa-regular fa-bookmark"
                                 }"></i></button>
@@ -87,4 +87,11 @@ function searchBook(key) {
     const books = getBookFromLocal()
     const filterBook = books.filter((k) => k.title.toUpperCase().includes(key.toUpperCase()))
     makeCardBook(filterBook)
+}
+// for toggle isRead 
+function isReadBook (index){
+    const books = getBookFromLocal()
+    books[index].isRead = !books[index].isRead
+    saveBooks(books)
+    makeCardBook(books)
 }
