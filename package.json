@@ -1,0 +1,21 @@
+{
+  "name": "bookshelfapp-projek-akhir-dicoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AchmadFajar1233/bookshelfApp-projek-akhir-dicoding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AchmadFajar1233/bookshelfApp-projek-akhir-dicoding/issues"
+  },
+  "homepage": "https://github.com/AchmadFajar1233/bookshelfApp-projek-akhir-dicoding#readme"
+}
